@@ -15,8 +15,8 @@ function draw() {
     
     
     //EARS
-    stroke(colorBack, colorBack, colorBack);
-    fill(colorWhite, colorWhite, colorWhite);
+    stroke(colorBack);
+    fill(colorWhite);
     ellipse(earsX, earsY, earsSize, earsSize2);
     ellipse(earsX2, earsY, earsSize, earsSize2);
     
@@ -45,7 +45,7 @@ function draw() {
     var eyeYleft = 240;
     
     //EYE
-    fill(colorBack, colorBack, colorBack);
+    fill(colorBack);
     ellipse(eyeXright, eyeYright, eyeSize);
     ellipse(eyeXleft, eyeYleft, eyeSize);
     
@@ -62,7 +62,7 @@ function draw() {
     var teethS5n6 = 90;
     
     //MOUTH
-    fill(colorWhite, colorWhite, colorWhite);
+    fill(colorWhite);
     arc(mouthX, mouthY, mouthSize, mouthSize2, mouthSize3, PI);
     fill(colorBack, colorBack, colorBack);
     stroke(colorWhite, colorWhite, colorWhite);
