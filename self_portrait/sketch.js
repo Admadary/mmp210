@@ -7,7 +7,7 @@ function draw() {
     
     //EARS
     stroke(0, 0, 0);
-    fill(250, 250, 250);
+    fill(0, 0, 0);
     ellipse(370, 120, 150, 240);
     ellipse(570, 120, 150, 240);
     
