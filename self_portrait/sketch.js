@@ -5,70 +5,30 @@ function setup() {
 function draw() {
     background(220);
     
-    var colorBack = 250;
-    var colorWhite = 0;
-    var earsX = 370;
-    var earsX2 = 570;
-    var earsY = 120;
-    var earsSize = 150;
-    var earsSize2 = 240;
-    
-    
     //EARS
-    stroke(colorBack);
-    fill(colorWhite);
-    ellipse(earsX, earsY, earsSize, earsSize2);
-    ellipse(earsX2, earsY, earsSize, earsSize2);
-    
-    var strokeR = 159;
-    var strokeG = 26;
-    var strokeB = 31;
-    var fillR = 159;
-    var fillG = 26;
-    var fillB = 31;
-    var headX = 470;
-    var headY = 280;
-    var headSize = 330;
+    stroke(0, 0, 0);
+    fill(250, 250, 250);
+    ellipse(370, 120, 150, 240);
+    ellipse(570, 120, 150, 240);
     
     //HEAD
-    stroke(strokeR, strokeG, strokeB);
-    fill(fillR, fillG, fillB);
-    ellipse(headX, headY, headSize);
+    stroke(159, 26, 31);
+    fill(159, 26, 31);
+    ellipse(470, 280, 330);
     
     //TEARS
-   
-    
-    var eyeXright = 588;
-    var eyeYright = 240;
-    var eyeSize = 80;
-    var eyeXleft = 352;
-    var eyeYleft = 240;
     
     //EYE
-    eyeXright = mouseX;
-    eyeXleft = mouseX + 215;
-    fill(colorBack);
-    ellipse(eyeXright, eyeYright, eyeSize);
-    ellipse(eyeXleft, eyeYleft, eyeSize);
-    
-    var mouthX = 470;
-    var mouthY = 310;
-    var mouthSize = 300;
-    var mouthSize2 = 260;
-    var mouthSize3 = 0;
-    var teethX = 355;
-    var teethY = 310;
-    var teethS1 = 230;
-    var teethS2 = 50;
-    var teethS3n4 = 0;
-    var teethS5n6 = 90;
+    fill(250, 250, 250);
+    ellipse(588, 240, 80);
+    ellipse(352, 240, 80);
     
     //MOUTH
-    fill(colorWhite);
-    arc(mouthX, mouthY, mouthSize, mouthSize2, mouthSize3, PI);
-    fill(colorBack, colorBack, colorBack);
-    stroke(colorWhite, colorWhite, colorWhite);
-    rect(teethX, teethY, teethS1, teethS2, teethS3n4, teethS3n4, teethS5n6,teethS5n6);
+    fill(0, 0, 0);
+    arc(470, 310, 300, 260, 0, PI);
+    fill(250, 250, 250);
+    stroke(0, 0, 0);
+    rect(355, 310, 230, 50, 0, 0, 90,90);
     
     
 }
