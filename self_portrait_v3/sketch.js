@@ -1,3 +1,6 @@
+/*This is my Javascript code for my Self Portrait Project Version 3. This version I add interaction to my Self Portrait*/
+
+
 function setup() {
     createCanvas(940, 560);
 }

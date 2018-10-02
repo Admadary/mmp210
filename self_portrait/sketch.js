@@ -1,3 +1,5 @@
+/*First version of my Self Portrait Project*/
+
 function setup() {
     createCanvas(940, 560);
 }

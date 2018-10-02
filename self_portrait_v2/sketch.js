@@ -1,3 +1,5 @@
+/*Self Portrait Project Version 2. In this second version, I am adding Variables to my code.*/
+
 function setup() {
     createCanvas(940, 560);
 }
