@@ -61,9 +61,11 @@ function draw() {
     var teethS3n4 = 0;
     var teethS5n6 = 90;
     
+    var  mouthS = map(mouseY,0, width, mouthSize, 100);
+    
     //MOUTH
     fill(colorWhite);
-    arc(mouthX, mouthY, mouthSize, mouthSize2, mouthSize3, PI);
+    arc(mouthX, mouthY, mouthSize, mouthS, mouthSize3, PI);
     fill(colorBack, colorBack, colorBack);
     stroke(colorWhite, colorWhite, colorWhite);
     rect(teethX, teethY, teethS1, teethS2, teethS3n4, teethS3n4, teethS5n6,teethS5n6);
