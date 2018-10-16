@@ -1,4 +1,4 @@
-/*First Version of my Meme Project.*/
+/*Second Version of my Meme Project. Conditional Logic.*/
 
 
 function setup() {
@@ -14,22 +14,20 @@ function preload() {
 function draw() {
     background(220);
     
-    image(img, 0, 0, 500, 600);
-    image(img2, 500, 0, 500, 300);
-    image(img3, 500, 300, 500, 300);
+    image(img, 0, 0, width, height);
+    if (mouseX > width / 2) {
+    image(img2, 500, 0, 500, 600);
+    }
+    else {
+    image(img3, 0, 0, 500, 600);
+    }
     
     var str1 = "My reaction when Ronald McDonald won the election";
-    var str2 = "Really man?";
     
     textSize(30);
-    fill(53, 12, 232);
+    fill(250);
     stroke('black');
     textFont("Impact");
     text(str1, 200, 40);
-    
-    fill('white');
-    text(str2, 800, 500);
-    
-    
     
 }
