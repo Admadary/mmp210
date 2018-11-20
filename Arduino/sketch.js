@@ -43,6 +43,12 @@ function serialEvent() {
     sensorValue = currentString;
 }
 
+function preload() {
+    img = loadImage("palm.png");
+}
+
+var img;
+
 function draw() {
    var c = map(sensorValue, 0, 1023, 0, 255);
     
@@ -50,9 +56,28 @@ function draw() {
     background(c, c, c + 55);
     
     var y = map(sensorValue, 0, 1023, height, 0);
+    var u = map(sensorValue, 0, 1023, height, 0);
     
     // sun
     noStroke();
     fill('gold');
-    ellipse(width/2, y, 50);
+    ellipse(u, y, 150);
+    
+    // sand
+    noStroke();
+    fill(237, 201, 175);
+    ellipse(500, 450, 500)
+    
+    // palm tree 
+   image(img, 400, 130, 100, 100);
+    
+    // water
+    fill(105, 144, 250);
+    ellipse(200, 400, 200);
+    ellipse(50, 380, 200);
+    fill(100, 70, 250);
+    ellipse(150, 380, 170);
+    
+    
+    
 }
